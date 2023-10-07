@@ -1,17 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import {getJoke} from "./axios/getJoke"
 import CardJoke from "./component/card/Card"
+import {IJoke} from "./interfaces/IJoke"
 import './App.css';
 
-
-
-interface Joke {
-  id: number;
-  type: string;
-  setup:string;
-  punchline:string;
-}
-export type TJokeList = Joke;
+export type TJokeList = IJoke;
 
 function App() {
 
